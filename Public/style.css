@@ -1,0 +1,569 @@
+body {
+    background: #E7E7E7;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    transition: background .5s linear , color .5s linear ;
+    overflow:hidden;
+
+
+    
+}
+
+
+
+
+/*section 01*/
+
+  #backSection {
+    min-width: 10%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+
+  }
+
+  
+  div#backBtn {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #D9D9D9;
+    margin-top: 17px;
+    margin-left: 29px;
+    border-radius: 30px;
+    border: 3px solid black;
+    width: 137px;
+    position: relative;
+    z-index: -400;
+    opacity: 0;
+
+
+}
+
+div#backBtn p {
+    margin-top:7px;
+    margin-bottom: 7px;
+}
+
+#backBtn {
+    transition: opacity .8s ease-in-out , transform 400ms ease-in-out, background 1s ease-in-out;
+    cursor: pointer;
+
+}
+
+#backBtn:hover {
+    opacity: .9;
+    background: #d9d9d985;
+    transform: scale(.9);
+
+}
+
+/**/
+
+
+/*section 02*/
+
+  #homeSection{
+    min-width: 80%;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: flex-direction 1.5s linear;
+  }
+
+  #particleCore img {
+    width: 317px;
+    margin-top: -150px;
+    border: none;
+    margin-bottom: 13px;
+    
+  }
+  #particleBlob {
+    width: 317px;
+    height: auto;
+    margin-top: -150px;
+    margin-bottom: 13px;
+  }
+ 
+
+
+#survey {
+    width: 80%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    transition: opacity .8s ease-in-out;
+    max-width: 500px;
+    max-height: 100px;
+    min-height: 120px;
+    z-index: 999;
+}
+
+#survey .container {
+  transition: opacity .5s ease-in-out;
+  display: none;
+  opacity: 0;
+
+}
+
+#firstText{
+  transition: opacity .8s ease-in-out, display .8s ease-in-out ;
+  opacity: 0;
+}
+
+@keyframes part5AnParticle {
+  0% {
+    margin-left: 0px;
+    margin-bottom: 0px; 
+  }
+  100% {
+    margin-left: -800px;
+    margin-bottom: -285px;
+    }
+     }
+
+@keyframes part5AnSurvey {
+  0% {
+    margin-right:0px;
+  }
+  100%{
+    margin-right:-450px;
+  }
+}
+  
+@keyframes part5AnParticleR {
+  0% {
+    margin-left: -800px;
+    margin-bottom: -285px;
+    }
+    100% {
+      margin-left: -38px;
+      margin-bottom: -61px;
+      
+      }
+}
+
+@keyframes part5AnSurveyR {
+  0% {
+    margin-right: -450px;
+    opacity: 1;
+  }
+  100%{
+    margin-right: 0px;
+    opacity: 0;
+  }
+  
+}
+
+@keyframes part5SurveyR1 {
+  0% {
+    margin-right: -450px;
+    opacity: 1;
+    }
+    100%{
+      margin-right: 0px;
+      margin-top: -305px!important;
+      opacity: 1;
+       }
+}
+
+
+@keyframes part5ParticleR1 {
+  0% {
+    margin-left: -800px;
+    margin-bottom: -285px;  
+     }
+     100%{
+      margin-bottom: -236px!important;
+      margin-left: 16px!important;
+      transform:  scale(.6) translateY(-406px)!important;
+    }
+}
+
+
+@keyframes part5AnParticleR2 {
+  0% {
+   
+    margin-left: 16px!important;
+    margin-bottom: -236px!important;
+    transform: scale(0.6) translateY(-406px);
+    }
+    100% {
+      transform: scale(1) translateY(-406px);
+      margin-left: -800px!important;
+      margin-bottom: -1000px!important;
+      
+      }
+}
+
+@keyframes part5AnSurveyR2 {
+  0% {
+    margin-right: 0px;
+    opacity: 1;
+  }
+  100%{
+    margin-right: -343px;
+   
+    opacity: 1;
+  }
+  
+}
+
+
+/**/
+
+/*section 03*/
+
+  #btnSection{
+    min-width: 10%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+
+  }
+
+  
+#langBtn {
+    background: #D9D9D9;
+    width: 50px;
+    height: 120px;
+    border: 5px solid black;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    transform: scale(0.8);
+    transition: box-shadow 0.3s ease , background .5s linear , color .5s linear , border .5s linear ;
+
+  
+}
+
+#lBtn{
+  background : #00F37F;
+  border:5px solid black;
+  padding:12px 14px!important;
+  border-radius:80px;
+  margin-top:-4px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease , background .5s linear , color .5s linear , border .5s linear ;
+
+}
+
+
+
+
+#mode {
+    background: #D9D9D9;
+    width: 50px;
+    height: 120px;
+    border: 5px solid black;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    transform: scale(0.8);
+    transition: box-shadow 0.3s ease , background .5s linear , color .5s linear , border .5s linear ;
+
+  
+}
+
+#lightD{
+  background : #00F37F;
+  border:5px solid black;
+  padding:12px 14px!important;
+  border-radius:80px;
+  margin-top:-4px;
+  transition: box-shadow 0.3s ease , background .5s linear , color .5s linear , border .5s linear ;
+  cursor: pointer;
+}
+
+#lightD i {
+    font-size: 29px;
+}
+
+/**/
+
+/*animations*/
+
+@keyframes LBtnActivate {
+    0%{
+        transform: translateY(0px);
+    }
+    
+    100%{
+        transform: translateY(67px);
+    }
+}
+
+@keyframes LBtnDeactivate {
+    0%{
+        transform: translateY(67px);
+    }
+    100%{
+        transform: translateY();
+    }
+}
+
+
+
+@keyframes waitingPt1 {
+  0%{
+    position: static;
+    margin-left: 0px;
+  }
+  100%{
+    position: absolute;
+    margin-left: 420px;
+  }
+  
+}
+
+@keyframes waitingPt2 {
+  0%{    
+      margin-top: 0px;
+      margin-left: 0px;
+      transform: scale(1);
+  }
+  100%{
+      margin-top: 223px;
+      margin-left: -726px;
+      transform: scale(1.3);
+  }
+  
+}
+
+.waitingPt1 {
+  position: absolute!important;
+  margin-left: 420px!important;
+}
+
+
+.waitingPt2 {
+  margin-top: 223px!important;
+      margin-left: -726px!important;
+      transform: scale(1.3)!important;
+}
+
+#particleBlob div#btnContainer  {
+  display: none;
+}
+
+
+div#btnContainer {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity .8s ease-in-out;
+}
+
+div#particleCore {
+  margin-bottom: -100px;
+  transition: transform .8s ease-in-out;
+  width: 50%;
+  display: flex;
+  height: 35%;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#expoBtn, #resuBtn, #C1Btn {
+  width: 140px;
+  height: 38px;
+  font-size: 16px;
+  border-radius: 30px;
+  background: #5736DE;
+  color: white; 
+  border: 1px solid #5736DE;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: opacity .4s ease-in-out, box-shadow 0.3s ease , background .5s linear , color .5s linear ;
+
+}
+
+
+  #expoBtn:hover ,#resuBtn:hover{
+      box-shadow: 4px 4px 10px rgba(12, 24, 196, 0.4);
+      opacity: .9;
+  }
+
+  /**/
+
+@keyframes toTheTop  {
+  0% {
+      margin-bottom: -100px;
+  }
+
+  100% {
+      margin-bottom: 0px;
+  }
+  
+}
+
+@keyframes fromTheTop {
+  0% {
+          transform: translateY(100px);
+          opacity: 0;
+  } 
+  100% {
+        transform: translateY(0px);
+        opacity: 1;
+  }
+  
+}
+
+
+@keyframes switchFlexD {
+  0% {
+    flex-direction: column;
+    }
+    100% {
+      flex-direction: row;
+      }
+  
+}
+
+#resultTable {
+  width: 1000px;
+  transform: scale(.6);
+  margin-top: 40px;
+}
+
+
+.applyC {
+  background: #5736DE;
+  color: white;
+  transition: opacity 1 linear;
+}
+
+.applyC:hover {
+  opacity: 0.8;
+}
+
+
+
+.applyLink {
+  text-decoration: none;
+  color: white;
+}
+
+h1#Header {
+    margin-bottom: -149px;
+    margin-top: 200px;
+}
+
+
+
+.btns  button#internship {
+  opacity: .5!important;
+  z-index: -2!important;
+}
+
+
+#particleCore .container {
+  width: 500px;
+  height: 500px;
+    margin-top: -150px;
+    border: none;
+    margin-bottom: 13px;
+
+}
+
+input[type="submit"] , button {
+  cursor: pointer;
+}
+
+.NoneCanvas {
+  display: none;
+}
+
+/*final tweak*/
+
+#C1Btn{
+  margin-top: 20px;
+}
+
+.btns button ,.btns input{
+  /* padding: 10px 20px; */
+  font-size: 13px;
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: opacity .4s ease-in-out;
+}
+
+ .btns button:hover ,.btns input:hover {
+  opacity: .7;
+}
+
+#C5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end!important;
+    height: 100%;
+    width: 100%;
+}
+
+#particleCore .btns {
+  gap: 31px;
+}
+
+#C2 .btns {
+  gap: 40px !important;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+
+/**/
+
+
+
+
+#downCV {
+  width: 180px;
+  display: none;
+  opacity: 0;
+  height: 68px;
+  font-size: 16px;
+  border-radius: 30px;
+  background: #5736DE;
+  color: white;
+  border: 1px solid #5736DE;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: opacity .4s ease-in-out, box-shadow 0.3s ease, transform .2s linear, color .5s linear;
+}
+
+#downCV:hover {
+  opacity: .7;
+  transform: scale(.9);
+}

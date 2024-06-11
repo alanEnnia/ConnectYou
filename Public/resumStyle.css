@@ -1,0 +1,174 @@
+
+.ExpSec {
+  
+  display: flex!important;
+  flex-direction: column!important;
+  align-content: center!important;
+  justify-content: center!important;
+  align-items: center!important;
+  gap: 19px!important;
+}
+
+
+
+
+.section__list-item {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  gap: 84px;
+  /* width: 626px; */
+  justify-content: center;
+  align-items: center;
+}
+ 
+#C12  {
+    min-height: 100%;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #222;
+    font-size: 14px;
+    line-height: 26px;
+    padding-bottom: 50px;
+    transform: scale(0.6) translateY(103px)!important;
+  }
+  
+  #C12 .container1 {
+    height: 793px;
+    min-width: 527px;
+    transform: scale(1) translateY(120px);
+    background: #fff;
+    margin: 0px auto 0px;
+    box-shadow: 1px 1px 2px #DAD7D7;
+    border-radius: 3px;
+    padding: 40px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+  }
+  
+  #C12 .header {
+    margin-bottom: 30px;
+  }
+  #C12 .header .full-name {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  #C12 .header .first-name {
+    font-weight: 700;
+  }
+  #C12 .header .last-name {
+    font-weight: 300;
+  }
+  #C12 .header .contact-info {
+    margin-bottom: 20px;
+  }
+  #C12 .header .email,
+  #C12 .header .phone {
+    color: #999;
+    font-weight: 300;
+  }
+  #C12 .header .separator {
+    height: 10px;
+    display: inline-block;
+    border-left: 2px solid #999;
+    margin: 0px 10px;
+  }
+  #C12 .header .position {
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: underline;
+  }
+  
+  #C12 .details {
+    line-height: 20px;
+  }
+  #C12 .details .section {
+    margin-bottom: 40px;
+  }
+  #C12 .details .section:last-of-type {
+    margin-bottom: 0px;
+  }
+  #C12 .details .section__title {
+    letter-spacing: 2px;
+    color: #54AFE4;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  .section__list {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 70px;
+  }
+  
+  
+  
+  #C12 .details .section__list-item {
+    margin-bottom: 0px;
+  }
+  #C12 .details .section__list-item:last-of-type {
+    margin-bottom: 0;
+  }
+  #C12 .details .left,
+  #C12 .details .right {
+    vertical-align: top;
+    display: inline-block;
+  }
+  #C12 .details .right {
+    text-align: center;
+    display: flex;
+    width: 39%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  #C12 .details .name {
+    font-weight: 800;
+  }
+  #C12 .details a {
+    text-decoration: none;
+    color: #000;
+    font-style: italic;
+  }
+  #C12 .details a:hover {
+    text-decoration: underline;
+    color: #000;
+  }
+  #C12 .details .skills__item {
+    margin-bottom: 10px;
+  }
+  #C12 .details .skills__item .right input {
+    display: none;
+  }
+  #C12 .details .skills__item .right label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #C3DEF3;
+    border-radius: 20px;
+    margin-right: 3px;
+  }
+  
+  .skills__items {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      gap: 20px;
+      padding-bottom: 19px;
+  }
+  
+  .name {
+    font-weight: bold;
+  }
+  
+      

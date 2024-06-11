@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect You</title>
+  
+    <link rel="stylesheet" href="C7style.css">
+    <link rel="stylesheet" href="style1.css">
+
+   <!-- <script src="./genAi.js" defer></script> -->
+    <script src="./backBtn.js" defer></script>
+    <script src="./exportCSV.js" defer></script>
+    <script src="./switchLightMode.js" defer></script>
+    <script src="./lang.js" defer></script>
+    <script src="./importData.js" defer></script>
+    <script  src="./audio.js" defer></script>
+    <script src="./genAi.js" defer></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/70ff3266e1.js" crossorigin="anonymous" defer></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/86/three.min.js" ></script>
+    <script  src="./particleBlob.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>  
+
+
+ 
+  <script  src="./script.js" defer></script>
+  <script src="./turnPDF.js" defer ></script>
+    
+
+    
+
+    </head>
+<body>
+
+<section id="backSection">
+
+        <div id="backBtn" >
+            <img src="./imgs/Arrow.png" alt="arrow">
+            <p>Back</p>
+        </div>
+
+        <audio id="currentAudio" src="./vocals/EN/C0.mp3"></audio>
+
+</section>
+
+
+
+<section id="homeSection">
+
+    
+    <div id="particleCore">
+         <div class="container comp">
+            <img src="./imgs/Ai.png" id="AiImg" alt="Ai">
+         </div> 
+       
+        <!--  <img src="./imgs/particule1.png" alt="particule">
+           <video id="particleBlob" autoplay muted loop>
+           <source src="../particul.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+            </video> -->
+           
+            <button type="button" id="downCV">Download the CV</button>
+            <div id="btnContainer">
+                <button type="submit" id="expoBtn">export data</button>
+                <button type="submit" id="resuBtn">build resume</button>
+            </div>
+
+    
+      </div>
+    <div id="survey">
+       
+        <p id="firstText">Hey There! <br> let’s me help you find your next job :) </p>
+  
+
+   
+    
+        <div id="C1" class="container">
+            <form  id="formC" >
+                <p id="part2p0">First tell me....</p>
+                <div id="input">
+                    <p id="part2p1">What's your name : </p>
+                    <input type="text" name="username" id="username">?
+                </div>
+                <button type="submit" id="C1Btn">next</button>
+            </form>
+        </div>
+
+        <div id="C2"  class="container">
+            <p id="pContainer" >Okey <span id="name" style="font-weight: 600;"></span> Let’s work on it!
+            <br> are you searching for an actual job or just an internship? </p>
+            <div class="btns">
+                    <button type="submit" id="internship">Internship</button>
+                    <button type="submit" id="job">Job</button>
+            </div>
+            </div>
+
+            <div  id="C3" class="container">
+                <p id="pContainer" >Cool! now Let Me Know.... <br>What is Your  speciality? </p>
+                <div class="btns">
+                  
+                        <button type="submit" id="ID">Infrastructure Digital</button>
+                  
+                        <button type="submit" id="DD">Development Digital </button>
+                  
+                        <button type="submit"  id="BM">   Business Management</button>
+                </div>
+                </div>
+
+                <div id="C4" class="container">
+                    <p id="pContainer" ><span id="sp"></span>!! WOW Nice Specialist <span id="name"></span> <br>
+                Now to give you the best result i need you to tell me about what interest you more.... </p>
+                  <div class="btns">
+                          <input type="button" value="" id="btn">
+                          <input type="button" value="" id="btn1">
+                          <input type="button" value="" id="btn2">
+                  </div>
+                  </div>
+
+
+                  <div id="C5" class="container">
+                    <p>Okey,i received your informations!<br>  give me a second to see what jobs matches with your states..... </p>
+                  </div>
+            
+                  <div id="C6" class="container">
+                    <h1 id="Header">Here is your list :)</h1>
+                    <table id="resultTable">
+                        <thead>
+                            <th id="jobName">Job Name</th>
+                            <th id="companyName">Company Name</th>
+                            <th id="location">Location</th>
+                            <th id="date" >Date</th>
+                            <th id="jobType">Job Type</th>
+                            <th id="applyLink">Apply Link</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>hu</td>
+                                <td>hu</td>
+                                <td>hu</td>
+                                <td>hu</td>
+                                <td>hu</td>
+                                <td>hu</td>
+                              </tr>
+                                <tr>
+                                <td>hu</td>
+                                <td>hu</td>
+                                <td>hu</td>
+                                <td>hu</td>
+                                <td>hu</td>
+                                <td>hu</td>
+                              </tr>  <tr>
+                                <td>hu</td>
+                                <td>hu</td>
+                                <td>hu</td>
+                                <td>hu</td>
+                                <td>hu</td>
+                                <td>hu</td>
+                              </tr>
+                            
+                        </tbody>
+                      
+                     
+                      
+                    </table>
+                      </div> 
+                      
+            <div id="C7" class="container Cpart2">
+                     
+            <div class="header">
+              <h1>let’s start with the basics!</h1>
+              <p>fill this form and i will help you build a great CV matching your states</p>
+            </div>
+            <form action="" id="GenAiForm1">
+              
+              <div id="inputs">
+                
+                <input type="number" id="age" min="18" max="40" placeholder="age">
+                <select name="" id="citizenship">
+                  <option value="Moroccan">Moroccan</option>
+                  <option value="Algerian">Algerian</option>
+                  <option value="French">French</option>
+                  <option value="Spanish">Spanish</option>
+                  <option value="Tunisian">Tunisian</option>
+                  <option value="Senegalese">Senegalese</option>
+                  <option value="Malian">Malian</option>
+                  <option value="Ivorian">Ivorian</option>
+                  <option value="Mauritanian">Mauritanian</option>
+                  <option value="Chinese">Chinese</option>
+                </select>
+                <input type="text" id="languages" placeholder="En,Fr,Sp" >
+                <br>
+                <input type="email" id="email" placeholder="email">
+                <input type="text" id="habits" placeholder="basketball,running" >
+                <input type="number" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" >
+            </div>
+              <div class="btns">
+                <button type="button" class="Skip Clear">clear</button>
+                <button type="button" class="Submit">submit</button>
+              </div>
+              
+            </form>
+        </div>          
+                 
+      <div id="C8" class="container Cpart2">
+                     
+        <div class="header">
+          <h1>Do You Have Any Experiences?</h1>
+          
+        </div>
+        
+        <form action="" id="GenAiForm2">
+          
+          <div id="inputs">
+              <input type="text" id="companyName" placeholder="name of the company">
+            <input type="text" id="jobTitle" placeholder="name of the job">
+            <input type="text" name="jobDesc" id="jobDesc" placeholder="Descripe what you did in the job">
+            <input type="date" name="fromDate" id="fromDate" placeholder="From">
+            <input type="date" name="toDate" id="toDate" placeholder="To" >
+          </div>
+          <div class="btns">
+            <button type="button" class="Skip">Skip</button>
+            <button type="button" class="Next">Next</button>
+            <button type="button" class="Add">Add</button>
+          </div>
+        </form>
+     </div>
+
+  
+        <div id="C9" class="container Cpart2">
+                     
+            <div class="header">
+              <h1>What about Degrees?</h1>
+              
+            </div>
+            
+            <form action="" id="GenAiForm3">
+              
+              <div id="inputs">
+                  <input type="text" id="degreeName" placeholder="Name of the Degree">
+                  <input type="text" id="universityName" placeholder="Name of the University">
+               
+                <input type="date" name="degreeDate" id="degreeDate" placeholder="Date">
+                <input type="number" name="degreeDuration" id="degreeDuration" min="1" max="5"  placeholder="Duration Per Year">
+              </div>
+              <div class="btns">
+                <button type="button" class="Skip">Skip</button>
+                <button type="button" class="Next">Next</button>
+                <button type="button" class="Add">Add</button>
+              </div>
+            </form>
+        
+      </div>
+
+       <div id="C10" class="container Cpart2">
+                     
+            <div class="header">
+              <h1>Any Past Projects?</h1>
+              
+            </div>
+            
+            <form action="" id="GenAiForm3">
+              
+              <div id="inputs"  style="display: flex;">
+                  <input type="text" id="projectName" placeholder="Name of the project" style="width: 300px;">
+                  <input type="text" id="projectDesc" placeholder="Describe it ( ai will help :> )"   style="
+                  width: 500px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  align-content: center;
+              ">
+              </div>
+              <div class="btns">
+                <button type="button" class="Skip">Skip</button>
+                <button type="button" class="Next">Next</button>
+                <button type="button" class="Add">Add</button>
+              </div>
+            </form>
+        
+      </div>
+
+  
+  <div id="C11" class="container Cpart2">
+                     
+    <div class="header">
+      <h1>i created “about me” section for you</h1>
+      <p>see if there is some thing that needs to be edited!</p>
+      
+    </div>
+    
+    <form action="" id="GenAiForm3">
+      
+      <div id="body">
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ipsum enim ut veritatis nobis. Dicta a distinctio consequatur porro sunt modi aspernatur, illo veritatis nesciunt eos sapiente, sit natus error.</P>
+
+      </div>
+      <div class="btns">
+        
+        <button type="button" class="Next" id="FinalNext">Next</button>
+        <button type="button"  id="AgainGenAi">Again</button>
+      </div>
+    </form>
+
+</div>
+
+<div id="C12" class="container Cpart2" >
+</div>
+    </div>
+
+
+</section>
+
+<section id="btnSection" >
+
+    <div id="langBtn">
+        <p id="lBtn">EN</p>
+    </div>
+
+    <div id="mode">
+        <p id="lightD"><i class="fa-regular fa-sun"></i></p>
+      <!--   <p id="lightD"><i class="fa-regular fa-moon"></i></p>-->
+    </div>
+
+</section>
+
+
+</body>
+</html>

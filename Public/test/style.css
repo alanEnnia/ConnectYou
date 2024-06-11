@@ -1,0 +1,21 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-self: center;
+	align-items:center;
+
+}
+
+.container {
+	width: 400px;
+	height: 400px;
+	
+}
+
+canvas {
+  position: absolute;
+  background: #ff0000;
+}
