@@ -505,8 +505,8 @@ async function loadingParts(){
         await turnPDF(username,Email,PhoneNumber,OutputPrompt,Experiences,Degrees,Projects,habits,speciality,actualLanguage);
         C12 = document.querySelector('#C12');
         C12.style.display = 'block';
-        Particle.style.animation = "part5AnParticle2 1s ease-in-out";
-        survey.style.animation = "part5AnSurvey2 1s ease-in-out";
+        C12.style.opacity = 1;
+        document.querySelector('#C12').style.opacity = 1;
         Particle.style.marginLeft = '-800px';
         Particle.style.marginBottom = '-1000px';
         Particle.style.transform = 'scale(1) translateY(-406px)';
@@ -520,7 +520,8 @@ async function loadingParts(){
         downCV.style.opacity = 1;
         await delay(300);
         downCV.style.transform  = 'translateY(0px)';
-        C12.style.opacity = 1;
+        aiImg.style.opacity = 0;
+       
     });
 
  }

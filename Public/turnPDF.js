@@ -190,14 +190,13 @@ async function prjGenAI (desc, actualLanguage){
 
 document.querySelector('#downCV').addEventListener('click', function () {
     html2canvas(document.querySelector('.container1'), {
+        width: 364.2, // Adjust width to include the entire content
+        height: 523.8, // Adjust height to include the entire content
         onrendered: function (canvas) {
-            console.log('1');
             var imgData = canvas.toDataURL('image/png');
             var doc = new jsPDF();
-            console.log('2');
-            doc.addImage(imgData, 'PNG', 10, 10);
+            doc.addImage(imgData, 'PNG', 5, 5);
             doc.save('CV.pdf');
-            console.log('3');
         }
     });
 });
