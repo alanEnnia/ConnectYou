@@ -5,7 +5,7 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 const app = express();
 const port = 5000;
 
-app.use(express.static('public'));
+app.use(express.static('Public'));
 app.use(bodyParser.json());
 
 // Access your API key as an environment variable (see "Set up your API key" above)
