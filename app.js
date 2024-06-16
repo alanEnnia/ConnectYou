@@ -5,11 +5,16 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 const app = express();
 const port = 5000;
 
-app.use(express.static('Public'));
+app.use(express.static('public'));
 app.use(bodyParser.json());
 
 // Access your API key as an environment variable (see "Set up your API key" above)
 const genAI = new GoogleGenerativeAI('AIzaSyCFDew433boEuZcZnKACGR-v4GhTSM4444');
+
+// Define a route for the root URL
+app.get('/', (req, res) => {
+    res.send('Welcome to my Node.js app!');
+});
 
 app.post('/generateContent', async (req, res) => {
     try {
