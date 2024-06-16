@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 const genAI = new GoogleGenerativeAI('AIzaSyCFDew433boEuZcZnKACGR-v4GhTSM4444');
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/public/index.html');
+    res.sendFile(__dirname + '/public');
 });
 
 app.post('/generateContent', async (req, res) => {
