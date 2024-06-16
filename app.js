@@ -11,9 +11,8 @@ app.use(bodyParser.json());
 // Access your API key as an environment variable (see "Set up your API key" above)
 const genAI = new GoogleGenerativeAI('AIzaSyCFDew433boEuZcZnKACGR-v4GhTSM4444');
 
-// Define a route for the root URL
 app.get('/', (req, res) => {
-    res.send('Welcome to my Node.js app!');
+    res.sendFile(__dirname + '/public/index.html');
 });
 
 app.post('/generateContent', async (req, res) => {
